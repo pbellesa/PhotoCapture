@@ -1,0 +1,9 @@
+\\CANYKW0000\UsersH\CABellesPe\Visual Studio 2013\Projects\PhotoCapture\PhotoCapture\Fakes\System.Device.fakes : warning : Cannot generate stub for System.Device.Location.CivicAddressResolver: type is sealed.
+\\CANYKW0000\UsersH\CABellesPe\Visual Studio 2013\Projects\PhotoCapture\PhotoCapture\Fakes\System.Device.fakes : warning : Cannot generate stub for System.Device.Location.GeoPositionAccuracy: type is a value type.
+\\CANYKW0000\UsersH\CABellesPe\Visual Studio 2013\Projects\PhotoCapture\PhotoCapture\Fakes\System.Device.fakes : warning : Cannot generate stub for System.Device.Location.GeoPositionStatus: type is a value type.
+\\CANYKW0000\UsersH\CABellesPe\Visual Studio 2013\Projects\PhotoCapture\PhotoCapture\Fakes\System.Device.fakes : warning : Cannot generate stub for System.Device.Location.GeoPositionPermission: type is a value type.
+\\CANYKW0000\UsersH\CABellesPe\Visual Studio 2013\Projects\PhotoCapture\PhotoCapture\Fakes\System.Device.fakes : warning : Cannot generate shim for System.Device.Location.ICivicAddressResolver: type is an interface.
+\\CANYKW0000\UsersH\CABellesPe\Visual Studio 2013\Projects\PhotoCapture\PhotoCapture\Fakes\System.Device.fakes : warning : Cannot generate shim for System.Device.Location.GeoPositionAccuracy: type is an enum.
+\\CANYKW0000\UsersH\CABellesPe\Visual Studio 2013\Projects\PhotoCapture\PhotoCapture\Fakes\System.Device.fakes : warning : Cannot generate shim for System.Device.Location.GeoPositionStatus: type is an enum.
+\\CANYKW0000\UsersH\CABellesPe\Visual Studio 2013\Projects\PhotoCapture\PhotoCapture\Fakes\System.Device.fakes : warning : Cannot generate shim for System.Device.Location.GeoPositionPermission: type is an enum.
+\\CANYKW0000\UsersH\CABellesPe\Visual Studio 2013\Projects\PhotoCapture\PhotoCapture\Fakes\System.Device.fakes : warning : Cannot generate shim for System.Device.Location.IGeoPositionWatcher`1: type is an interface.

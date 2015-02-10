@@ -1,0 +1,935 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Device.4.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Device.Location.Fakes.ShimCivicAddress">
+            <summary>Shim type of System.Device.Location.CivicAddress</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimCivicAddress.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimCivicAddress.#ctor(System.Device.Location.CivicAddress)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimCivicAddress.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimCivicAddress.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AddressLine1Get">
+            <summary>Sets the shim of CivicAddress.get_AddressLine1()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AddressLine1SetString">
+            <summary>Sets the shim of CivicAddress.set_AddressLine1(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AddressLine2Get">
+            <summary>Sets the shim of CivicAddress.get_AddressLine2()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AddressLine2SetString">
+            <summary>Sets the shim of CivicAddress.set_AddressLine2(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.BuildingGet">
+            <summary>Sets the shim of CivicAddress.get_Building()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.BuildingSetString">
+            <summary>Sets the shim of CivicAddress.set_Building(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.CityGet">
+            <summary>Sets the shim of CivicAddress.get_City()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.CitySetString">
+            <summary>Sets the shim of CivicAddress.set_City(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.Constructor">
+            <summary>Sets the shim of CivicAddress.CivicAddress()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.ConstructorStringStringStringStringStringStringStringString">
+            <summary>Sets the shim of CivicAddress.CivicAddress(String addressLine1, String addressLine2, String building, String city, String countryRegion, String floorLevel, String postalCode, String stateProvince)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.CountryRegionGet">
+            <summary>Sets the shim of CivicAddress.get_CountryRegion()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.CountryRegionSetString">
+            <summary>Sets the shim of CivicAddress.set_CountryRegion(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.FloorLevelGet">
+            <summary>Sets the shim of CivicAddress.get_FloorLevel()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.FloorLevelSetString">
+            <summary>Sets the shim of CivicAddress.set_FloorLevel(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.IsUnknownGet">
+            <summary>Sets the shim of CivicAddress.get_IsUnknown()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.PostalCodeGet">
+            <summary>Sets the shim of CivicAddress.get_PostalCode()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.PostalCodeSetString">
+            <summary>Sets the shim of CivicAddress.set_PostalCode(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.StateProvinceGet">
+            <summary>Sets the shim of CivicAddress.get_StateProvince()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.StateProvinceSetString">
+            <summary>Sets the shim of CivicAddress.set_StateProvince(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.StaticConstructor">
+            <summary>Sets the shim of CivicAddress.CivicAddress()</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimCivicAddress.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.AddressLine1Get">
+            <summary>Sets the shim of CivicAddress.get_AddressLine1()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.AddressLine1SetString">
+            <summary>Sets the shim of CivicAddress.set_AddressLine1(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.AddressLine2Get">
+            <summary>Sets the shim of CivicAddress.get_AddressLine2()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.AddressLine2SetString">
+            <summary>Sets the shim of CivicAddress.set_AddressLine2(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.BuildingGet">
+            <summary>Sets the shim of CivicAddress.get_Building()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.BuildingSetString">
+            <summary>Sets the shim of CivicAddress.set_Building(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.CityGet">
+            <summary>Sets the shim of CivicAddress.get_City()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.CitySetString">
+            <summary>Sets the shim of CivicAddress.set_City(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.CountryRegionGet">
+            <summary>Sets the shim of CivicAddress.get_CountryRegion()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.CountryRegionSetString">
+            <summary>Sets the shim of CivicAddress.set_CountryRegion(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.FloorLevelGet">
+            <summary>Sets the shim of CivicAddress.get_FloorLevel()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.FloorLevelSetString">
+            <summary>Sets the shim of CivicAddress.set_FloorLevel(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.IsUnknownGet">
+            <summary>Sets the shim of CivicAddress.get_IsUnknown()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.PostalCodeGet">
+            <summary>Sets the shim of CivicAddress.get_PostalCode()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.PostalCodeSetString">
+            <summary>Sets the shim of CivicAddress.set_PostalCode(String value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.StateProvinceGet">
+            <summary>Sets the shim of CivicAddress.get_StateProvince()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddress.AllInstances.StateProvinceSetString">
+            <summary>Sets the shim of CivicAddress.set_StateProvince(String value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimCivicAddressResolver">
+            <summary>Shim type of System.Device.Location.CivicAddressResolver</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimCivicAddressResolver.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimCivicAddressResolver.#ctor(System.Device.Location.CivicAddressResolver)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimCivicAddressResolver.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimCivicAddressResolver.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimCivicAddressResolver.Bind(System.Device.Location.ICivicAddressResolver)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.Constructor">
+            <summary>Sets the shim of CivicAddressResolver.CivicAddressResolver()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.ResolveAddressAsyncGeoCoordinate">
+            <summary>Sets the shim of CivicAddressResolver.ResolveAddressAsync(GeoCoordinate coordinate)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.ResolveAddressCompletedAddEventHandlerOfResolveAddressCompletedEventArgs">
+            <summary>Sets the shim of CivicAddressResolver.add_ResolveAddressCompleted(EventHandler`1&lt;ResolveAddressCompletedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.ResolveAddressCompletedRemoveEventHandlerOfResolveAddressCompletedEventArgs">
+            <summary>Sets the shim of CivicAddressResolver.remove_ResolveAddressCompleted(EventHandler`1&lt;ResolveAddressCompletedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.ResolveAddressGeoCoordinate">
+            <summary>Sets the shim of CivicAddressResolver.ResolveAddress(GeoCoordinate coordinate)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimCivicAddressResolver.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.AllInstances.ResolveAddressAsyncGeoCoordinate">
+            <summary>Sets the shim of CivicAddressResolver.ResolveAddressAsync(GeoCoordinate coordinate)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.AllInstances.ResolveAddressCompletedAddEventHandlerOfResolveAddressCompletedEventArgs">
+            <summary>Sets the shim of CivicAddressResolver.add_ResolveAddressCompleted(EventHandler`1&lt;ResolveAddressCompletedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.AllInstances.ResolveAddressCompletedRemoveEventHandlerOfResolveAddressCompletedEventArgs">
+            <summary>Sets the shim of CivicAddressResolver.remove_ResolveAddressCompleted(EventHandler`1&lt;ResolveAddressCompletedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimCivicAddressResolver.AllInstances.ResolveAddressGeoCoordinate">
+            <summary>Sets the shim of CivicAddressResolver.ResolveAddress(GeoCoordinate coordinate)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoCoordinate">
+            <summary>Shim type of System.Device.Location.GeoCoordinate</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinate.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinate.#ctor(System.Device.Location.GeoCoordinate)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinate.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinate.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinate.Bind(System.IEquatable{System.Device.Location.GeoCoordinate})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AltitudeGet">
+            <summary>Sets the shim of GeoCoordinate.get_Altitude()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AltitudeSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Altitude(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.Constructor">
+            <summary>Sets the shim of GeoCoordinate.GeoCoordinate()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.ConstructorDoubleDouble">
+            <summary>Sets the shim of GeoCoordinate.GeoCoordinate(Double latitude, Double longitude)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.ConstructorDoubleDoubleDouble">
+            <summary>Sets the shim of GeoCoordinate.GeoCoordinate(Double latitude, Double longitude, Double altitude)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.ConstructorDoubleDoubleDoubleDoubleDoubleDoubleDouble">
+            <summary>Sets the shim of GeoCoordinate.GeoCoordinate(Double latitude, Double longitude, Double altitude, Double horizontalAccuracy, Double verticalAccuracy, Double speed, Double course)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.CourseGet">
+            <summary>Sets the shim of GeoCoordinate.get_Course()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.CourseSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Course(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.EqualityOpGeoCoordinateGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinate.op_Equality(GeoCoordinate left, GeoCoordinate right)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.EqualsGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinate.Equals(GeoCoordinate other)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.EqualsObject">
+            <summary>Sets the shim of GeoCoordinate.Equals(Object obj)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.GetDistanceToGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinate.GetDistanceTo(GeoCoordinate other)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.GetHashCode">
+            <summary>Sets the shim of GeoCoordinate.GetHashCode()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.HorizontalAccuracyGet">
+            <summary>Sets the shim of GeoCoordinate.get_HorizontalAccuracy()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.HorizontalAccuracySetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_HorizontalAccuracy(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.InequalityOpGeoCoordinateGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinate.op_Inequality(GeoCoordinate left, GeoCoordinate right)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.IsUnknownGet">
+            <summary>Sets the shim of GeoCoordinate.get_IsUnknown()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.LatitudeGet">
+            <summary>Sets the shim of GeoCoordinate.get_Latitude()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.LatitudeSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.LongitudeGet">
+            <summary>Sets the shim of GeoCoordinate.get_Longitude()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.LongitudeSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.SpeedGet">
+            <summary>Sets the shim of GeoCoordinate.get_Speed()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.SpeedSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Speed(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.StaticConstructor">
+            <summary>Sets the shim of GeoCoordinate.GeoCoordinate()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.ToString">
+            <summary>Sets the shim of GeoCoordinate.ToString()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.VerticalAccuracyGet">
+            <summary>Sets the shim of GeoCoordinate.get_VerticalAccuracy()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.VerticalAccuracySetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_VerticalAccuracy(Double value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.AltitudeGet">
+            <summary>Sets the shim of GeoCoordinate.get_Altitude()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.AltitudeSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Altitude(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.CourseGet">
+            <summary>Sets the shim of GeoCoordinate.get_Course()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.CourseSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Course(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.EqualsGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinate.Equals(GeoCoordinate other)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.EqualsObject">
+            <summary>Sets the shim of GeoCoordinate.Equals(Object obj)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.GetDistanceToGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinate.GetDistanceTo(GeoCoordinate other)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.GetHashCode01">
+            <summary>Sets the shim of GeoCoordinate.GetHashCode()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.HorizontalAccuracyGet">
+            <summary>Sets the shim of GeoCoordinate.get_HorizontalAccuracy()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.HorizontalAccuracySetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_HorizontalAccuracy(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.IsUnknownGet">
+            <summary>Sets the shim of GeoCoordinate.get_IsUnknown()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.LatitudeGet">
+            <summary>Sets the shim of GeoCoordinate.get_Latitude()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.LatitudeSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Latitude(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.LongitudeGet">
+            <summary>Sets the shim of GeoCoordinate.get_Longitude()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.LongitudeSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Longitude(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.SpeedGet">
+            <summary>Sets the shim of GeoCoordinate.get_Speed()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.SpeedSetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_Speed(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.ToString01">
+            <summary>Sets the shim of GeoCoordinate.ToString()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.VerticalAccuracyGet">
+            <summary>Sets the shim of GeoCoordinate.get_VerticalAccuracy()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinate.AllInstances.VerticalAccuracySetDouble">
+            <summary>Sets the shim of GeoCoordinate.set_VerticalAccuracy(Double value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoCoordinateWatcher">
+            <summary>Shim type of System.Device.Location.GeoCoordinateWatcher</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.#ctor(System.Device.Location.GeoCoordinateWatcher)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.Bind(System.Device.Location.IGeoPositionWatcher{System.Device.Location.GeoCoordinate})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.Constructor">
+            <summary>Sets the shim of GeoCoordinateWatcher.GeoCoordinateWatcher()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.ConstructorGeoPositionAccuracy">
+            <summary>Sets the shim of GeoCoordinateWatcher.GeoCoordinateWatcher(GeoPositionAccuracy desiredAccuracy)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.DesiredAccuracyGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_DesiredAccuracy()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.DesiredAccuracySetGeoPositionAccuracy">
+            <summary>Sets the shim of GeoCoordinateWatcher.set_DesiredAccuracy(GeoPositionAccuracy value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.Dispose">
+            <summary>Sets the shim of GeoCoordinateWatcher.Dispose()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.DisposeBoolean">
+            <summary>Sets the shim of GeoCoordinateWatcher.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.MovementThresholdGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_MovementThreshold()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.MovementThresholdSetDouble">
+            <summary>Sets the shim of GeoCoordinateWatcher.set_MovementThreshold(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.OnPositionChangedGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.OnPositionChanged(GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt; e)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.OnPositionStatusChangedGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.OnPositionStatusChanged(GeoPositionStatusChangedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.OnPropertyChangedString">
+            <summary>Sets the shim of GeoCoordinateWatcher.OnPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.PermissionGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_Permission()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.PositionChangedAddEventHandlerOfGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.add_PositionChanged(EventHandler`1&lt;GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt;&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.PositionChangedRemoveEventHandlerOfGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.remove_PositionChanged(EventHandler`1&lt;GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt;&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.PositionChangedSystemDeviceLocationIGeoPositionWatcherSystemDeviceLocationGeoCoordinateaddEventHandlerOfGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.Device.Location.IGeoPositionWatcher&lt;System.Device.Location.GeoCoordinate&gt;.add_PositionChanged(EventHandler`1&lt;GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt;&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.PositionChangedSystemDeviceLocationIGeoPositionWatcherSystemDeviceLocationGeoCoordinateremoveEventHandlerOfGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.Device.Location.IGeoPositionWatcher&lt;System.Device.Location.GeoCoordinate&gt;.remove_PositionChanged(EventHandler`1&lt;GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt;&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.PositionGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_Position()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.PropertyChangedSystemComponentModelINotifyPropertyChangedaddPropertyChangedEventHandler">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.ComponentModel.INotifyPropertyChanged.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.PropertyChangedSystemComponentModelINotifyPropertyChangedremovePropertyChangedEventHandler">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.ComponentModel.INotifyPropertyChanged.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.Start">
+            <summary>Sets the shim of GeoCoordinateWatcher.Start()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.StartBoolean">
+            <summary>Sets the shim of GeoCoordinateWatcher.Start(Boolean suppressPermissionPrompt)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.StatusChangedAddEventHandlerOfGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.add_StatusChanged(EventHandler`1&lt;GeoPositionStatusChangedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.StatusChangedRemoveEventHandlerOfGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.remove_StatusChanged(EventHandler`1&lt;GeoPositionStatusChangedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.StatusChangedSystemDeviceLocationIGeoPositionWatcherSystemDeviceLocationGeoCoordinateaddEventHandlerOfGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.Device.Location.IGeoPositionWatcher&lt;System.Device.Location.GeoCoordinate&gt;.add_StatusChanged(EventHandler`1&lt;GeoPositionStatusChangedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.StatusChangedSystemDeviceLocationIGeoPositionWatcherSystemDeviceLocationGeoCoordinateremoveEventHandlerOfGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.Device.Location.IGeoPositionWatcher&lt;System.Device.Location.GeoCoordinate&gt;.remove_StatusChanged(EventHandler`1&lt;GeoPositionStatusChangedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.StatusGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_Status()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.Stop">
+            <summary>Sets the shim of GeoCoordinateWatcher.Stop()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.TryStartBooleanTimeSpan">
+            <summary>Sets the shim of GeoCoordinateWatcher.TryStart(Boolean suppressPermissionPrompt, TimeSpan timeout)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.DesiredAccuracyGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_DesiredAccuracy()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.DesiredAccuracySetGeoPositionAccuracy">
+            <summary>Sets the shim of GeoCoordinateWatcher.set_DesiredAccuracy(GeoPositionAccuracy value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.Dispose">
+            <summary>Sets the shim of GeoCoordinateWatcher.Dispose()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of GeoCoordinateWatcher.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.MovementThresholdGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_MovementThreshold()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.MovementThresholdSetDouble">
+            <summary>Sets the shim of GeoCoordinateWatcher.set_MovementThreshold(Double value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.OnPositionChangedGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.OnPositionChanged(GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt; e)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.OnPositionStatusChangedGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.OnPositionStatusChanged(GeoPositionStatusChangedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.OnPropertyChangedString">
+            <summary>Sets the shim of GeoCoordinateWatcher.OnPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.PermissionGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_Permission()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.PositionChangedAddEventHandlerOfGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.add_PositionChanged(EventHandler`1&lt;GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt;&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.PositionChangedRemoveEventHandlerOfGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.remove_PositionChanged(EventHandler`1&lt;GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt;&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.PositionChangedSystemDeviceLocationIGeoPositionWatcherSystemDeviceLocationGeoCoordinateaddEventHandlerOfGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.Device.Location.IGeoPositionWatcher&lt;System.Device.Location.GeoCoordinate&gt;.add_PositionChanged(EventHandler`1&lt;GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt;&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.PositionChangedSystemDeviceLocationIGeoPositionWatcherSystemDeviceLocationGeoCoordinateremoveEventHandlerOfGeoPositionChangedEventArgsOfGeoCoordinate">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.Device.Location.IGeoPositionWatcher&lt;System.Device.Location.GeoCoordinate&gt;.remove_PositionChanged(EventHandler`1&lt;GeoPositionChangedEventArgs`1&lt;GeoCoordinate&gt;&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.PositionGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_Position()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.PropertyChangedSystemComponentModelINotifyPropertyChangedaddPropertyChangedEventHandler">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.ComponentModel.INotifyPropertyChanged.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.PropertyChangedSystemComponentModelINotifyPropertyChangedremovePropertyChangedEventHandler">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.ComponentModel.INotifyPropertyChanged.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.Start">
+            <summary>Sets the shim of GeoCoordinateWatcher.Start()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.StartBoolean">
+            <summary>Sets the shim of GeoCoordinateWatcher.Start(Boolean suppressPermissionPrompt)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.StatusChangedAddEventHandlerOfGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.add_StatusChanged(EventHandler`1&lt;GeoPositionStatusChangedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.StatusChangedRemoveEventHandlerOfGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.remove_StatusChanged(EventHandler`1&lt;GeoPositionStatusChangedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.StatusChangedSystemDeviceLocationIGeoPositionWatcherSystemDeviceLocationGeoCoordinateaddEventHandlerOfGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.Device.Location.IGeoPositionWatcher&lt;System.Device.Location.GeoCoordinate&gt;.add_StatusChanged(EventHandler`1&lt;GeoPositionStatusChangedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.StatusChangedSystemDeviceLocationIGeoPositionWatcherSystemDeviceLocationGeoCoordinateremoveEventHandlerOfGeoPositionStatusChangedEventArgs">
+            <summary>Sets the shim of GeoCoordinateWatcher.System.Device.Location.IGeoPositionWatcher&lt;System.Device.Location.GeoCoordinate&gt;.remove_StatusChanged(EventHandler`1&lt;GeoPositionStatusChangedEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.StatusGet">
+            <summary>Sets the shim of GeoCoordinateWatcher.get_Status()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.Stop">
+            <summary>Sets the shim of GeoCoordinateWatcher.Stop()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoCoordinateWatcher.AllInstances.TryStartBooleanTimeSpan">
+            <summary>Sets the shim of GeoCoordinateWatcher.TryStart(Boolean suppressPermissionPrompt, TimeSpan timeout)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoPosition`1">
+            <summary>Shim type of System.Device.Location.GeoPosition`1</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPosition`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPosition`1.#ctor(System.Device.Location.GeoPosition{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPosition`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPosition`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.Constructor">
+            <summary>Sets the shim of GeoPosition`1.GeoPosition`1()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.ConstructorDateTimeOffsetT0">
+            <summary>Sets the shim of GeoPosition`1.GeoPosition`1(DateTimeOffset timestamp, !0 position)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.LocationGet">
+            <summary>Sets the shim of GeoPosition`1.get_Location()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.LocationSetT0">
+            <summary>Sets the shim of GeoPosition`1.set_Location(!0 value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.TimestampGet">
+            <summary>Sets the shim of GeoPosition`1.get_Timestamp()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.TimestampSetDateTimeOffset">
+            <summary>Sets the shim of GeoPosition`1.set_Timestamp(DateTimeOffset value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoPosition`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.AllInstances.LocationGet">
+            <summary>Sets the shim of GeoPosition`1.get_Location()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.AllInstances.LocationSetT0">
+            <summary>Sets the shim of GeoPosition`1.set_Location(!0 value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.AllInstances.TimestampGet">
+            <summary>Sets the shim of GeoPosition`1.get_Timestamp()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPosition`1.AllInstances.TimestampSetDateTimeOffset">
+            <summary>Sets the shim of GeoPosition`1.set_Timestamp(DateTimeOffset value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1">
+            <summary>Shim type of System.Device.Location.GeoPositionChangedEventArgs`1</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.#ctor(System.Device.Location.GeoPositionChangedEventArgs{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.ConstructorGeoPositionOfT0">
+            <summary>Sets the shim of GeoPositionChangedEventArgs`1.GeoPositionChangedEventArgs`1(GeoPosition`1&lt;!0&gt; position)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.PositionGet">
+            <summary>Sets the shim of GeoPositionChangedEventArgs`1.get_Position()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.PositionSetGeoPositionOfT0">
+            <summary>Sets the shim of GeoPositionChangedEventArgs`1.set_Position(GeoPosition`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.AllInstances.PositionGet">
+            <summary>Sets the shim of GeoPositionChangedEventArgs`1.get_Position()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionChangedEventArgs`1.AllInstances.PositionSetGeoPositionOfT0">
+            <summary>Sets the shim of GeoPositionChangedEventArgs`1.set_Position(GeoPosition`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs">
+            <summary>Shim type of System.Device.Location.GeoPositionStatusChangedEventArgs</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.#ctor(System.Device.Location.GeoPositionStatusChangedEventArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.ConstructorGeoPositionStatus">
+            <summary>Sets the shim of GeoPositionStatusChangedEventArgs.GeoPositionStatusChangedEventArgs(GeoPositionStatus status)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.StatusGet">
+            <summary>Sets the shim of GeoPositionStatusChangedEventArgs.get_Status()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.StatusSetGeoPositionStatus">
+            <summary>Sets the shim of GeoPositionStatusChangedEventArgs.set_Status(GeoPositionStatus value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.AllInstances.StatusGet">
+            <summary>Sets the shim of GeoPositionStatusChangedEventArgs.get_Status()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimGeoPositionStatusChangedEventArgs.AllInstances.StatusSetGeoPositionStatus">
+            <summary>Sets the shim of GeoPositionStatusChangedEventArgs.set_Status(GeoPositionStatus value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs">
+            <summary>Shim type of System.Device.Location.ResolveAddressCompletedEventArgs</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.#ctor(System.Device.Location.ResolveAddressCompletedEventArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.AddressGet">
+            <summary>Sets the shim of ResolveAddressCompletedEventArgs.get_Address()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.AddressSetCivicAddress">
+            <summary>Sets the shim of ResolveAddressCompletedEventArgs.set_Address(CivicAddress value)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.ConstructorCivicAddressExceptionBooleanObject">
+            <summary>Sets the shim of ResolveAddressCompletedEventArgs.ResolveAddressCompletedEventArgs(CivicAddress address, Exception error, Boolean cancelled, Object userState)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.AllInstances.AddressGet">
+            <summary>Sets the shim of ResolveAddressCompletedEventArgs.get_Address()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.ShimResolveAddressCompletedEventArgs.AllInstances.AddressSetCivicAddress">
+            <summary>Sets the shim of ResolveAddressCompletedEventArgs.set_Address(CivicAddress value)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.StubCivicAddress">
+            <summary>Stub type of System.Device.Location.CivicAddress</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubCivicAddress.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubCivicAddress.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubCivicAddress.InitializeStub">
+            <summary>Initializes a new instance of type StubCivicAddress</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubCivicAddress.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubCivicAddress.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubCivicAddress.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.StubGeoCoordinate">
+            <summary>Stub type of System.Device.Location.GeoCoordinate</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinate.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinate.#ctor(System.Double,System.Double)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinate.#ctor(System.Double,System.Double,System.Double)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinate.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinate.Equals(System.Object)">
+            <summary>Sets the stub of GeoCoordinate.Equals(Object obj)</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubGeoCoordinate.EqualsObject">
+            <summary>Sets the stub of GeoCoordinate.Equals(Object obj)</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinate.GetHashCode">
+            <summary>Sets the stub of GeoCoordinate.GetHashCode()</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubGeoCoordinate.GetHashCode01">
+            <summary>Sets the stub of GeoCoordinate.GetHashCode()</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinate.InitializeStub">
+            <summary>Initializes a new instance of type StubGeoCoordinate</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinate.ToString">
+            <summary>Sets the stub of GeoCoordinate.ToString()</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubGeoCoordinate.ToString01">
+            <summary>Sets the stub of GeoCoordinate.ToString()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoCoordinate.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoCoordinate.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoCoordinate.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.StubGeoCoordinateWatcher">
+            <summary>Stub type of System.Device.Location.GeoCoordinateWatcher</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinateWatcher.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinateWatcher.#ctor(System.Device.Location.GeoPositionAccuracy)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinateWatcher.Dispose(System.Boolean)">
+            <summary>Sets the stub of GeoCoordinateWatcher.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubGeoCoordinateWatcher.DisposeBoolean">
+            <summary>Sets the stub of GeoCoordinateWatcher.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoCoordinateWatcher.InitializeStub">
+            <summary>Initializes a new instance of type StubGeoCoordinateWatcher</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoCoordinateWatcher.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoCoordinateWatcher.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoCoordinateWatcher.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.StubGeoPosition`1">
+            <summary>Stub type of System.Device.Location.GeoPosition`1</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoPosition`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoPosition`1.#ctor(System.DateTimeOffset,`0)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoPosition`1.InitializeStub">
+            <summary>Initializes a new instance of type StubGeoPosition</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoPosition`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoPosition`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoPosition`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.StubGeoPositionChangedEventArgs`1">
+            <summary>Stub type of System.Device.Location.GeoPositionChangedEventArgs`1</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoPositionChangedEventArgs`1.#ctor(System.Device.Location.GeoPosition{`0})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoPositionChangedEventArgs`1.InitializeStub">
+            <summary>Initializes a new instance of type StubGeoPositionChangedEventArgs</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoPositionChangedEventArgs`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoPositionChangedEventArgs`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoPositionChangedEventArgs`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.StubGeoPositionStatusChangedEventArgs">
+            <summary>Stub type of System.Device.Location.GeoPositionStatusChangedEventArgs</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoPositionStatusChangedEventArgs.#ctor(System.Device.Location.GeoPositionStatus)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubGeoPositionStatusChangedEventArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubGeoPositionStatusChangedEventArgs</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoPositionStatusChangedEventArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoPositionStatusChangedEventArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubGeoPositionStatusChangedEventArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.StubICivicAddressResolver">
+            <summary>Stub type of System.Device.Location.ICivicAddressResolver</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubICivicAddressResolver.#ctor">
+            <summary>Initializes a new instance of type StubICivicAddressResolver</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubICivicAddressResolver.ResolveAddressAsyncGeoCoordinate">
+            <summary>Sets the stub of ICivicAddressResolver.ResolveAddressAsync(GeoCoordinate coordinate)</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubICivicAddressResolver.ResolveAddressGeoCoordinate">
+            <summary>Sets the stub of ICivicAddressResolver.ResolveAddress(GeoCoordinate coordinate)</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubICivicAddressResolver.sd::System#Device#Location#ICivicAddressResolver#ResolveAddress(System.Device.Location.GeoCoordinate)">
+            <summary>Sets the stub of ICivicAddressResolver.ResolveAddress(GeoCoordinate coordinate)</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubICivicAddressResolver.sd::System#Device#Location#ICivicAddressResolver#ResolveAddressAsync(System.Device.Location.GeoCoordinate)">
+            <summary>Sets the stub of ICivicAddressResolver.ResolveAddressAsync(GeoCoordinate coordinate)</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.StubIGeoPositionWatcher`1">
+            <summary>Stub type of System.Device.Location.IGeoPositionWatcher`1</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.#ctor">
+            <summary>Initializes a new instance of type StubIGeoPositionWatcher</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.PositionGet">
+            <summary>Sets the stub of IGeoPositionWatcher`1.get_Position()</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.Start">
+            <summary>Sets the stub of IGeoPositionWatcher`1.Start()</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.StartBoolean">
+            <summary>Sets the stub of IGeoPositionWatcher`1.Start(Boolean suppressPermissionPrompt)</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.StatusGet">
+            <summary>Sets the stub of IGeoPositionWatcher`1.get_Status()</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.Stop">
+            <summary>Sets the stub of IGeoPositionWatcher`1.Stop()</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.sd::System#Device#Location#IGeoPositionWatcher{T}#Start">
+            <summary>Sets the stub of IGeoPositionWatcher`1.Start()</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.sd::System#Device#Location#IGeoPositionWatcher{T}#Start(System.Boolean)">
+            <summary>Sets the stub of IGeoPositionWatcher`1.Start(Boolean suppressPermissionPrompt)</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.sd::System#Device#Location#IGeoPositionWatcher{T}#Stop">
+            <summary>Sets the stub of IGeoPositionWatcher`1.Stop()</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.sd::System#Device#Location#IGeoPositionWatcher{T}#TryStart(System.Boolean,System.TimeSpan)">
+            <summary>Sets the stub of IGeoPositionWatcher`1.TryStart(Boolean suppressPermissionPrompt, TimeSpan timeout)</summary>
+        </member>
+        <member name="F:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.TryStartBooleanTimeSpan">
+            <summary>Sets the stub of IGeoPositionWatcher`1.TryStart(Boolean suppressPermissionPrompt, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.sd::System#Device#Location#IGeoPositionWatcher{T}#Position">
+            <summary>Sets the stub of IGeoPositionWatcher`1.get_Position()</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubIGeoPositionWatcher`1.sd::System#Device#Location#IGeoPositionWatcher{T}#Status">
+            <summary>Sets the stub of IGeoPositionWatcher`1.get_Status()</summary>
+        </member>
+        <member name="T:System.Device.Location.Fakes.StubResolveAddressCompletedEventArgs">
+            <summary>Stub type of System.Device.Location.ResolveAddressCompletedEventArgs</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubResolveAddressCompletedEventArgs.#ctor(System.Device.Location.CivicAddress,System.Exception,System.Boolean,System.Object)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Device.Location.Fakes.StubResolveAddressCompletedEventArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubResolveAddressCompletedEventArgs</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubResolveAddressCompletedEventArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubResolveAddressCompletedEventArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Device.Location.Fakes.StubResolveAddressCompletedEventArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

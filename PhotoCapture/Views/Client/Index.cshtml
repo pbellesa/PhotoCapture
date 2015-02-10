@@ -1,0 +1,88 @@
+﻿@model IEnumerable<PhotoCapture.Models.Client>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@section GoogleMaps {
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?">
+    </script>
+
+}
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<script>
+    var geocoder;
+
+    function initialize() {
+        geocoder = new google.maps.Geocoder();
+    }
+
+    function codeLatLng(lat, lng, id) {
+
+        var latlng = new google.maps.LatLng(lat, lng);
+        geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                if (results[1]) {
+                    var node = document.getElementById(id);
+                    node.innerHTML = results[0].formatted_address;
+                    
+                   
+                }
+            } else {
+                alert("Geocoder failed due to: " + status);
+            }
+        });
+    }
+
+    initialize();
+</script>
+<table class="table table-responsive table-striped ">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            Latitude
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GPS.Longitude)
+        </th>
+        <th>
+            Address
+        </th>
+    </tr>
+
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GPS.Latitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GPS.Longitude)
+        </td>
+        <td>     
+            <span id="@item.Name"></span>
+            <script class="address">
+                codeLatLng(@item.GPS.Latitude, @item.GPS.Longitude, "@item.Name" );
+            </script>
+        </td>
+        </tr>
+    <tr>
+        <td colspan="3">
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

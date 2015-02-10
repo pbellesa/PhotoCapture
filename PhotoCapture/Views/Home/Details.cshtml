@@ -1,0 +1,181 @@
+﻿@model PhotoCapture.Models.Photo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@section GoogleMaps {
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?">
+</script>
+
+}
+<h2>Details</h2>
+
+
+<div>
+    <h4>Photo</h4>
+    <p>
+        @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }, new { @class = "btn btn-primary btn-large" }) &nbsp;*@
+        @Html.ActionLink("Back to List", "Create", null, new { @class = "btn btn-primary btn-large" })
+    </p>
+
+	<hr />
+    <div class="row">
+        <div class="col-md-4">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Filename)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Filename)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Type)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Type)
+                </dd>
+
+                @*<dt>
+                    @Html.DisplayNameFor(model => model.DataAndTime)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DataAndTime)
+                </dd>*@
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.GPS.Latitude)
+                </dt>
+
+                <dd id="latitude">
+                    @Html.DisplayFor(model => model.GPS.Latitude)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.GPS.Longitude)
+                </dt>
+
+                <dd id="longitude">
+                    @Html.DisplayFor(model => model.GPS.Longitude)
+                </dd>
+
+
+            </dl>
+        </div>
+        <div class="col-md-6">
+            @using (Html.BeginForm()){
+            <div id="client-list" class="panel panel-primary">
+                <div id="client-list-header" class="panel-heading">
+                    <strong class="">Clients</strong>
+                    <span class="pull-right"><button type="submit" class="btn btn-xs btn-success">Save</button></span>
+                </div>
+                @foreach (var item in Model.ClientList)
+                {
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <div class="form-control form-control-feedback">
+                                    <span id="client-list-name" class="text-left col-md-2">@item.Name</span>&nbsp;
+                                    <span id="client-list-distance" class="text-right col-md-5"><strong>&nbsp;</strong>@((item.GPS.GetDistanceTo(Model.GPS)/1000).ToString("0.## Km"))</span>
+                                </div>
+
+                                @*<button class="btn btn-primary btn-xs pull-right" type="button"><span class="glyphicon glyphicon-plus"></span></button>*@
+                                <span class="input-group-addon"><input name="AttachedClient"  type="radio" value="@item.Name" /></span>
+                            </div>
+                        </li>
+                    </ul>
+                }
+            </div>
+            }
+        </div>
+    </div class="row">
+
+    <script type="text/javascript">
+    var lat = @Html.Raw(Json.Encode(Model.GPS.Latitude)) ;
+    var lng = @Html.Raw(Json.Encode(Model.GPS.Longitude)) ;
+
+
+        function initialize() {
+            var geoCoder = new google.maps.Geocoder();
+            var myLatLng= new google.maps.LatLng(lat, lng);
+            var mapOptions = {
+                center: myLatLng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+  
+            };
+
+            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+            var infoWindow = new google.maps.InfoWindow();
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map
+            })
+
+
+            geoCoder.geocode({'latLng': myLatLng}, function(results, status){
+                if(status == google.maps.GeocoderStatus.OK){
+                    if (results[1]) {
+                        infoWindow.setContent(results[0].formatted_address);
+                        infoWindow.open(map, marker);
+                        google.maps.event.addListener( marker, 'click', function(){
+                            infoWindow.open(map, this);
+                        });
+                    }
+                    else {
+                        alert('No results found');
+                    }
+                }
+            });
+
+
+
+            var locations = @Html.Raw(Json.Encode(Model.ClientList)) ;
+
+            var clientInfowindow = new google.maps.InfoWindow();
+            var markerClient, i;
+            var bounds = new google.maps.LatLngBounds();
+            bounds.extend(marker.position);
+            for (i = 0; i < locations.length; i++) {  
+                markerClient = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i].GPS.Latitude, locations[i].GPS.Longitude),
+                    map: map
+                });
+                bounds.extend(markerClient.position);
+                google.maps.event.addListener(markerClient, 'click', (function(markerClient, i) {
+                  
+                    return function() {
+                        clientInfowindow.setContent(locations[i].Name);
+                        clientInfowindow.open(map, markerClient);
+                    }
+                })(markerClient, i));
+
+            }
+            map.fitBounds(bounds);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <div  id="map-canvas" class="container-fluid" style="height: 400px">@*<iframe id="map" width="100%"
+        height="100%"
+        frameborder="0" style="border:0"
+        src="about:blank"></iframe>*@</div>
+</div>
+@section EmbeddedMap{
+    @*<script type="text/javascript">
+        $(document).ready(function() {
+
+
+            var lat = @Html.Raw(Json.Encode(Model.GPS.Latitude)) ;
+            var lng = @Html.Raw(Json.Encode(Model.GPS.Longitude)) ;
+            console.log(lat + "," + lng); // Testing
+
+            document.getElementById('map').src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyCI033l0vPokqnpU14uyTb8jDazciWAMXs&q=" + lat + "," + lng;
+        });
+    </script>*@
+}

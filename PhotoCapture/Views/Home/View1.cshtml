@@ -1,0 +1,56 @@
+﻿@model PhotoCapture.Models.Photo
+
+@{
+    ViewBag.Title = "View1";
+}
+
+<h2>View1</h2>
+
+<div>
+    <h4>Photo</h4>
+    <p>
+        @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }, new { @class = "btn btn-primary btn-large" }) &nbsp;*@
+        @Html.ActionLink("Back to List", "Create", null, new { @class = "btn btn-primary btn-large" })
+    </p>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Filename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Filename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataAndTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataAndTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttachedClient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttachedClient)
+        </dd>
+        
+    </dl>
+    @*<img src="@Model.ImageSource"/>*@
+    <img class="img-responsive" src="@Url.Action("RenderImage")" alt="Alternate Text" />
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

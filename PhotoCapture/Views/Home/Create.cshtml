@@ -1,0 +1,97 @@
+﻿@model PhotoCapture.Models.FileUpload
+
+@{
+    ViewBag.Title = "Create";
+}
+@section GoogleMaps {
+    
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+}
+<h2>Create</h2>
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" })) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-inline">
+        <h4>FileUpload</h4>
+        <p id="warning" class="label label-danger">@ViewBag.Name</p>
+        <div>
+            <br />
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary btn-large" })
+        </div>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="file" class="filestyle" data-buttonname="btn-primary" data-input="false" data-size="lg" name="File" value="" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <button id="location" type="button" class="btn btn-lg"><span class="glyphicon glyphicon-map-marker"></span> Current Location</button>
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <a data-toggle="collapse" href="#SearchBar" class="btn btn-primary btn-lg">Search</a>
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Send" class="btn btn-lg btn-success" />
+            </div>
+        </div>
+        
+            
+        <div class="row">
+            <div id="SearchBar" class="panel panel-collapse collapse col-lg-10">
+                <div class="input-group input-group-lg panel-body"> 
+                    <input id="autocomplete" name="autocomplete" type="text" placeholder="Address, Postal Code, City..." class="form-control input-lg" />
+                </div>
+            </div>
+        </div>
+
+        <input class="hidden" name="CurrentLocation" id="CurrentLocation" type="text" value="" />
+        
+    </div>
+    
+}
+<script>
+    var autocomplete;
+    function initialize() {
+        // Create the autocomplete object, restricting the search
+        // to geographical location types.
+        autocomplete = new google.maps.places.Autocomplete(
+           (document.getElementById('autocomplete')),
+            { types: ['geocode'] });
+        // When the user selects an address from the dropdown,
+        // populate the address fields in the form.
+        google.maps.event.addListener(autocomplete, 'place_changed', function () {
+            fillInAddress();
+        });
+    }
+
+    function fillInAddress() {
+        // Get the place details from the autocomplete object.
+        var place = autocomplete.getPlace();
+        document.getElementById("CurrentLocation").value = place.geometry.location.lat() + "," + place.geometry.location.lng();
+        console.log(document.getElementById("CurrentLocation").value);
+        console.log(place.geometry.location);
+    }
+
+    initialize();
+</script>
+
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    
+}
